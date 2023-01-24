@@ -1,17 +1,42 @@
 @font-face {
-    font-family: OpenSans-Regular;
-    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff) format("woff");
-    font-weight: 400;
+  font-family: OpenSans-Regular;
+  src: url(../fonts/OpenSans-Regular.ttf) format("ttf");
+  font-weight: 400;
   }
 
-@font-face{  font-family: OpenSans-Bold;
-    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff) format("woff");
-    font-weight: 700;
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url(../fonts/OpenSans-Regular.woff) format("woff");
+  font-weight: 400;
   }
   
-  html {
-    font-size: 10px;
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url(../fonts/OpenSans-Bold.woff2) format("woff2");
+  font-weight: 400;
   }
+
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url(../fonts/OpenSans-Bold.ttf) format("ttf");
+  font-weight: 700;
+  }
+
+@font-face{  
+  font-family: OpenSans-Bold;
+  src: url(../fonts/OpenSans-Bold.woff) format("woff");
+  font-weight: 700;
+  }
+
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url(../fonts/OpenSans-Bold.woff2) format("woff2");
+  font-weight: 700;
+}
+  
+html {
+  font-size: 10px;
+}
 
   *,
   *::after,
@@ -122,12 +147,13 @@
     font-weight: bold;
     font-size: 4.5rem;
     text-align: center;
-    line-height: 7.5rem;
+    line-height: 1.66;
     color: #fff;
     max-width: 700px;
     margin: 0 auto;
     text-transform: uppercase;
-    padding: 11rem 0;
+    padding-bottom: 13rem;
+    margin-top: 10rem;
   }
 
   .trend {
@@ -260,6 +286,8 @@
 
   .article {
     display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
     margin-top: 6rem;
   }
   
@@ -333,7 +361,7 @@
   
   .article__text {
     font-size: 1.5rem;
-    line-height: 1.46;
+    line-height: 1.45;
     color: #0f0d0e;
     margin-bottom: 1rem;
   }
@@ -833,7 +861,7 @@
 .article {
   display: block;
   margin-left: 0;
-  margin-top: 6rem;
+  margin-top: 6rem; 
   }
 
 .article__img {
@@ -860,6 +888,10 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   }
+
+.shop-img {
+  width: 100%;
+}
       
 .shop-block {
   width: 41%;
@@ -902,6 +934,161 @@
   .trend-part:nth-child(3n) {
     margin-left: 0;
   }}
+
+  @media (max-width: 640px) {
+  .header {
+    background-image: url(../images/banner-mobile.jpg);
+    height: 100vh;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .header__logo-link {
+    order: 1;
+    margin-top: 35%;
+  }
+
+  .header__logo {
+    width: 27rem;
+  }
+
+  .menu__mobil {
+    display: block;
+    width: 3rem;
+    height: 2.5rem;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    margin-left: auto;
+    margin-top: 2rem;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .menu__mobil:before {
+    content: "";
+    width: 3rem;
+    height: 0.4rem;
+    display: block;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+  }
+
+  .menu__button {
+    display: block;
+    width: 3rem;
+    height: 0.4rem;
+    background-color: #ffffff;
+    position: absolute;
+    top: 1rem;
+    border: none;
+  }
+
+  .menu__mobil:after {
+    content: "";
+    width: 3rem;
+    height: 0.4rem;
+    display: block;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .container__title {
+    width: 28rem;
+  }
+
+  .title {
+    font-size: 2.6rem;
+    margin-top: 4rem;
+  }
+
+  .trend-container {
+    display: block;
+  }
+
+  .trend-part {
+    width: 100%;
+  }
+
+  .trend-part:nth-child(n+2) {
+    margin-left: 0;
+    margin-top: 0.3rem;
+  }
+
+  .news__container {
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .article__img {
+    width: 100%;
+  }
+
+  .article__content {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+
+  .article__text {
+    margin-top: 2.5rem;
+  }
+
+  .newposts__posts {
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+  }
+
+  .title__post {
+    font-size: 1.6rem;
+  }
+
+  .posts__content {
+    width: 70%;
+  }
+
+  .posts__title {
+    font-size: 1.6rem;
+  }
+
+  .subscribe, .tags__wrapper, .shop, .footer, .copyright {
+    margin-top: 4rem;
+  }
+
+  .shop-container {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .shop-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .shop-block:nth-child(n+2) {
+    margin-top: 45px;
+  }
+
+  .footer {
+    width: 90%;
+  }
+  }
 
   /*@media (min-width: 641px) and (max-width: 1199px) {
     .menu {
