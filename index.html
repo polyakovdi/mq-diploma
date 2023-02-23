@@ -8,134 +8,69 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-          <a href="#" class="header__logo-link">
-            <img src="svg/noemi-logo.svg" class="header__logo" alt="Логотип компании">
-          </a>
-
-          <nav class="menu__mobil">
-            <button class="menu__button">
-                <span class="visually__hidden">Бургер меню</span>
-              </button>
+  <div class="main__page">
+    <header class="header"> 
+      <div class="container">
+        <nav class="header-menu">
+          <img class="header-top-logo" src="svg/noemi-logo.svg" alt="noemi-logo">    
+          <button class="menu-button" type="button">
+            <span class="menu-button-label"></span>
+          </button>
+          <ul class="header-nav">
+            <li class="header-nav-item"><a href="#0">главная</a></li>  
+            <li class="header-nav-item"><a href="#0">посты</a></li>
+            <li class="header-nav-item"><a href="#0">статьи</a></li>
+            <li class="header-nav-item"><a href="#0">теги</a></li>
+            <li class="header-nav-item"><a href="#0">темы</a></li>
+            <li class="header-nav-item"><a href="#0">контакты</a></li>
+          </ul>
         </nav>
-      
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__list-item">
-                <a class="menu__link" href="#0">Главная</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__link" href="#0">Посты</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__link" href="#0">Статьи</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__link" href="#0">Теги</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__link" href="#0">Темы</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__link" href="#0">Контакты</a>
-              </li>
-            </ul>
-          </nav>
+        <div>
+          <h1 class="head-label">Блог о творчестве, спорте, и образе жизни</h1>
         </div>
-
-        <div class="container__title">
-          <h1 class="title">Блог о творчестве, спорте и образе жизни</h1>
       </div>
-      </header>
-
-      <section class="trend">
-            <h2 class="shop__header">Сейчас в тренде</h2>
+    </header>
+      <section class="trends">
+        <h2 class="shop__header">Сейчас в тренде</h2>
         <div class="trend__container">
-            <div class="trend__part part-one">
-                <img src="images/trend1.jpg" class="trend__img" alt="Фотография человека у моря">
-                <div class="trend__content">
-                    <header class="trend__content-header">
-                        <div class="category">
-                            <ul class="category__list">
-                                <li class="category__list-item">
-                                    <a href="#0" class="category__link">Lifestyle</a>
-                                </li>
-                                <li class="category__list-item">
-                                    <a href="#0" class="category__link">Interior</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <h3 class="trend__title">
-                            <a href="#0" class="trend__title-link ">Сейчас в тренде: сад на подоконнике</a>
-                        </h3>
-                    </header>
-
-                </div>
+          <article class="trends__post">
+            <div class="category">
+              <ul class="category__list">
+              <li><a href="#0" class="category__link">lifestyle</a></li>
+              <li><a href="#0" class="category__link">interior</a></li>
+            </ul>
+            <h2 class="trend__title"><a href="#0" class="trend__title-link">Сейчас в тренде: сад на подоконнике</a></h2>
             </div>
-            <div class="trend__part part-two">
-                <img src="images/trend2.jpg" class="trend__img" alt="Фотография человека у моря">
-                <div class="trend__content">
-                    <header class="trend__content-header">
-                        <div class="category">
-                            <ul class="category__list">
-                                <li class="category__list-item">
-                                    <a href="#0" class="category__link">Food</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <h3 class="trend__title">
-                            <a href="#0" class="trend__title-link ">Сыры на красивых картинках из интернета: какие они на вкус?</a>
-                        </h3>
-                    </header>
-
-                </div>
+          </article>
+          <article class="trends__post">              
+            <div class="category">
+              <ul class="category__list">
+              <li><a href="#0" class="category__link">food</a></li>
+            </ul>
+            <h2 class="trend__title"><a href="#0" class="trend__title-link">Cыры на красивых  картинках из интернета: какие они на вкус?</a></h2>
             </div>
-            <div class="trend__part part-three">
-                <img src="images/trend3.jpg" class="trend__img" alt="Фотография человека у моря">
-                <div class="trend__content">
-                    <header class="trend__content-header">
-                        <div class="category">
-                            <ul class="category__list">
-                                <li class="category__list-item">
-                                    <a href="#0" class="category__link">Livestyle</a>
-                                </li>
-                                <li class="category__list-item">
-                                  <a href="#0" class="category__link">Travel</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <h3 class="trend__title">
-                            <a href="#0" class="trend__title-link ">Собираемся в первый поход в горы</a>
-                        </h3>
-                    </header>
-
-                </div>
+          </article>
+          <article class="trends__post">
+            <div class="category">
+              <ul class="category__list">
+              <li><a href="#0" class="category__link">lifestyle</a></li>
+              <li><a href="#0" class="category__link">travel</a></li>
+            </ul>
+            <h2 class="trend__title"><a href="#0" class="trend__title-link">Собираемся в первый поход в горы</a></h2>
             </div>
-            <div class="trend__part part-four">
-                <img src="images/trend4.jpg" class="trend__img" alt="Фотография человека у моря">
-                <div class="trend__content">
-                    <header class="trend__content-header">
-                        <div class="category">
-                            <ul class="category__list">
-                                <li class="category__list-item">
-                                    <a href="#0" class="category__link">Food</a>
-                                </li>
-                                <li class="category__list-item">
-                                    <a href="#0" class="category__link">Health</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <h3 class="trend__title">
-                            <a href="#0" class="trend__title-link ">Сейчас в тренде: сколько витамина С в лимонах?</a>
-                        </h3>
-                    </header>
-
-                </div>
+          </article>
+          <article class="trends__post">  
+            <div class="category">
+              <ul class="category__list">
+              <li><a href="#0" class="category__link">food</a></li>
+              <li><a href="#0" class="category__link">health</a></li>
+            </ul>
+            <h2 class="trend__title"><a href="#0" class="trend__title-link">Сейчас в тренде: сколько витамина с в лимонах?</a></h2>
             </div>
-        </div>
-    </section>
-       
+          </article>       
+        </div> 
+      </section>
+      
     <div class="page">
       <main class="news__container">
       <!--art1-->
@@ -432,9 +367,7 @@
           </aside> 
       
       <section class="shop">
-        <div class="posts__header-container">
             <h2 class="shop__header">Наши изделия</h2>
-        </div>
         <div class="shop__container">
             <article class="shop__block">
                 <picture class="shop__picture">
@@ -444,15 +377,11 @@
                     <img src="images/shop-item-desk1.jpg" class="shop__img"  alt="Фотография диванной подушки">
                 </picture>
                 <div class="content__container">
-                    <div class="shop__content">
                         <h3 class="shop__title">
                             <a href="#0" class="shop__title-link ">Подушки на диван</a>
                         </h3>
-                        <div class="shop__description">
-                            <p>Набор из двух подушек с модными принтами. Видео о создании <span class="shop__link">
+                            <p class="product__info">Набор из двух подушек с модными принтами. Видео о создании <span class="shop__link">
                                 <a href="#0" class="text__link">здесь</a></span>.</p>
-                        </div>
-                    </div>
                     <footer class="shop__footer">
                         <div class="shop__prices">
                             <span class="shop__price old-price">1000 &#8381;</span>
@@ -470,15 +399,11 @@
                     <img src="images/shop-item-desk2.jpg" class="shop__img" alt="Фотография с зайчиком, книгами и чайной чашкой">
                 </picture>
                 <div class="content__container">
-                    <div class="shop__content">
                         <h3 class="shop__title">
                             <a href="#0" class="shop__title-link ">Кукла «Зайчик»</a>
                         </h3>
-                        <div class="shop__description">
-                            <p>Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <span class="shop__link">
+                              <p class="product__info">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <span class="shop__link">
                                 <a href="#0" class="text__link">весенняя серия постов </a></span>в блоге и несколько подкастов.</p>
-                        </div>
-                    </div>
                     <footer class="shop__footer">
                         <div class="shop__prices">
                             <span class="shop__price old-price"></span>
@@ -496,15 +421,11 @@
                     <img src="images/shop-item-desk3.jpg" class="shop__img" alt="Фотография с шестиугольной рамкой">
                 </picture>
                 <div class="content__container">
-                    <div class="shop__content">
                         <h3 class="shop__title">
                             <a href="#0" class="shop__title-link ">Шестиугольная рамка</a>
                         </h3>
-                        <div class="shop__description">
-                            <p>Необычная рамка для украшения дома из видео <span class="shop__link">
+                            <p class="product__info">Необычная рамка для украшения дома из видео <span class="shop__link">
                                 <a href="#0" class="text__link">«Как сделать рамку из подручных средств за 30 минут»</a></span>.</p>
-                        </div>
-                    </div>
                     <footer class="shop__footer">
                         <div class="shop__prices">
                             <span class="shop__price old-price">500 &#8381;</span>
@@ -541,7 +462,8 @@
           <div class="copyright__text">
             <a href="#0" class="copyright__link">Copyright © 2009–2019 City Blog LLC.</a>
           </div>
-      </footer>  
+      </footer>
+      </div>  
 
 
       <div class="popup">
